@@ -1,0 +1,74 @@
+import java.util.Scanner;
+public class project
+{
+    public static void main(String args[])
+    {
+    Scanner sk = new Scanner(System.in);
+    String option;
+    
+    int n,m;
+    int a=5;
+    System.out.println("-------------------------");
+    System.out.println("**welcome to the IPL quiz**");
+    System.out.println("-------------------------");
+    System.out.println("do you want to play the quiz[yes/no]: ");
+    option = sk.next();
+    
+    if (option.equalsIgnoreCase("yes"))
+    {
+       System.out.println("let's start-");
+       System.out.println("question 1: ");
+       System.out.println("which country has won fifa worldcup 2022? ");
+       System.out.println("1.portgual\n2.brazil\n3.argentina\n4.india");
+       System.out.println("enter your option: ");
+       n = sk.nextInt();
+       if(n==3)
+       {
+           System.out.println("correct! ");
+           System.out.println("points secured= " + a);
+       }
+        else
+       {
+           System.out.println("incorect! ");
+           System.exit(0);
+       }
+       System.out.println("who is the prime minister of india ");
+       System.out.println("1.modi\n2.rahul gandhi\n3.kcr\n4.amith sha");
+       System.out.println("enter your option: ");
+       m = sk.nextInt();
+       if(m==1)
+       {
+          System.out.println("correct! ");
+          a+=5;
+          System.out.println("points secured= " + a); 
+       }
+       else
+       {
+        System.out.println("incorect! ");
+        System.exit(0); 
+       }
+       System.out.println("who is the highest wicket taker in test cricket? ");
+       System.out.println("1.Muttiah Muralitharan\n2.Styen\n3.Warne\n4.J Ayesnderson");
+       System.out.println("enter your option: ");
+       m = sk.nextInt();
+       if(m==1)
+       {
+          System.out.println("correct! ");
+          a+=5;
+          System.out.println("points secured= " + a); 
+       }
+       else
+       {
+        System.out.println("incorect! ");
+        System.exit(0); 
+       }
+       
+       System.exit(0);   
+    }
+    else
+    {
+       System.out.println("ok bye");
+    }
+    }
+    
+}
